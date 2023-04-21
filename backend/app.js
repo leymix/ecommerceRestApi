@@ -1,3 +1,5 @@
+//4.video yapıldı ama postman denendi ve başarılı
+//5.video indirildi yapılmadı
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
@@ -44,5 +46,5 @@ mongoose.connect(process.env.MONGO_URL, {
 //Server
 app.listen(port, ()=>{
 
-    console.log('server is running http://localhost:3000');
+    console.log('server is running http://localhost:'+port);
 })
