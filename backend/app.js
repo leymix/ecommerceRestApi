@@ -1,5 +1,6 @@
 //4.video yapıldı postman denendi ve başarılı
 //5.video yapıldı postman denendi ve başarılı
+//6.video yapıldı postman denendi ve başarılı
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
