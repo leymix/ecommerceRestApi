@@ -1,6 +1,7 @@
 //4.video yapıldı postman denendi ve başarılı
 //5.video yapıldı postman denendi ve başarılı
 //6.video yapıldı postman denendi ve başarılı
+//7.video yapıldı postman denendi ve başarılı ve kurst bitti
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
@@ -18,6 +19,7 @@ app.options('*', cors())
 app.use(bodyParser.json());
 app.use(morgan('tiny'));
 app.use(autJwt());
+app.use('/public/uploads',express.static(__dirname+'/public/uploads'))
 app.use(errorHandler);
 
 
